@@ -2,7 +2,6 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import Price from "./Price";
-import { useState } from "react";
 
 const Book = ({ book }) => {
   const [img, setImg] = React.useState();
@@ -10,6 +9,7 @@ const Book = ({ book }) => {
   const mountedRef = useRef(true);
 
   useEffect(() => {
+    //skelton loading
     const image = new Image();
     image.src = book.url;
     image.onload = () => {
@@ -19,6 +19,7 @@ const Book = ({ book }) => {
       }, 300);
     };
     return () => {
+      
       mountedRef.current = false;
     }
   });

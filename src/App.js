@@ -8,7 +8,6 @@ import BookInfo from "./pages/BookInfo";
 import Cart from "./pages/Cart";
 import React, { useState } from "react";
 import { useEffect } from "react";
-import { counter } from "@fortawesome/fontawesome-svg-core";
 
 function App() {
   const [cart, setCart] = useState([]);

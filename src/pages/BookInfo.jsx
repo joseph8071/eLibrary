@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Rating from "../components/Ui/Rating";
 import Price from "../components/Ui/Price";
-import { useParams } from "react-router-dom/cjs/react-router-dom";
+import { useParams } from "react-router-dom";
 import Book from "../components/Ui/book";
-import { useState } from "react";
+
 
 const BookInfo = ({ books, addToCart, cart }) => {
   const { id } = useParams();
